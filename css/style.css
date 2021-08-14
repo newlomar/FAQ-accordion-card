@@ -42,11 +42,12 @@ body {
 }
 
 .card {
-  max-width: 330px;
+  min-width: 330px;
   background-color: #fff;
   border-radius: 1.5rem;
   padding: 1.5rem;
   position: relative;
+  margin-top: 8rem;
 }
 
 .card .main-image {
@@ -60,15 +61,39 @@ body {
   left: 4rem;
 }
 
-.card .main__section {
-  margin-top: 10rem;
-}
-
 .card .main__section h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 9rem;
+  color: var(--very-dark-desaturated-blue);
 }
+
+.card .main__section .questions {
+  margin: 2rem 0;
+}
+
+.card .main__section .questions .question-div {
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.card .main__section .questions .question-div .question {
+  font-size: 1.15rem;
+  color: var(--very-dark-grayish-blue);
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card .main__section .questions .question-div .question img {
+  height: 0.6rem;
+}
+
+.card .main__section .questions .question-div .answer {
+  display: none;
+}
+
 /* Media Queries */
 
 @media (min-width: 376px) {
