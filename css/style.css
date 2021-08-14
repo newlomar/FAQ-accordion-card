@@ -41,12 +41,17 @@ body {
   min-height: 100vh;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
 .card {
+  position: relative;
   min-width: 330px;
   background-color: #fff;
   border-radius: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding: 1.5rem;
-  position: relative;
   margin-top: 8rem;
 }
 
