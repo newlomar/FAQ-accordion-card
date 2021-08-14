@@ -97,11 +97,21 @@ footer {
   height: 0.6rem;
 }
 
+.card .main__section .questions .question-div .question img.active {
+  transform: rotate(180deg);
+}
+
 .card .main__section .questions .question-div .answer {
+  display: none;
   padding: 0.1rem 0 1rem 0;
   font-size: 1rem;
   color: var(--dark-grayish-blue);
 }
+
+.card .main__section .questions .question-div .answer.active {
+  display: block;
+}
+
 
 /* Media Queries */
 
