@@ -81,6 +81,7 @@ footer {
 
 .card .main__section .questions .question-div {
   border-bottom: 1px solid var(--light-grayish-blue);
+  cursor: pointer;
 }
 
 .card .main__section .questions .question-div .question {
@@ -91,33 +92,31 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.card .main__section .questions .question-div .question span {
-  transition: font-weight 150ms ease-in-out;
+  transition: font-weight 300ms;
 }
 
 .card .main__section .questions .question-div .question span.active {
   font-weight: 700;
 }
 
-.card .main__section .questions .question-div .question img {
+.card .main__section .questions .question-div .question a img {
   height: 0.6rem;
 }
 
-.card .main__section .questions .question-div .question img.active {
+.card .main__section .questions .question-div .question a img.active {
   transform: rotate(180deg);
 }
 
 .card .main__section .questions .question-div .answer {
-  display: none;
-  padding: 0.1rem 0 1rem 0;
+  max-height: 0;
+  overflow: hidden;
   font-size: 1rem;
   color: var(--dark-grayish-blue);
+  transition: max-height 300ms;
 }
 
 .card .main__section .questions .question-div .answer.active {
-  display: block;
+  max-height: 20rem;
 }
 
 

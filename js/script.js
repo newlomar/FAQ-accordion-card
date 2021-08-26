@@ -2,14 +2,14 @@ const questions_div = document.querySelector('.questions');
 
 const questions = [...questions_div.children];
 
-function add_active_class() {
+function add_active_class_listener() {
   questions.forEach(item => {
     item.addEventListener('click', function() {
       item.children[0].children[0].classList.toggle('active');
-      item.children[0].children[1].classList.toggle('active');
+      item.children[0].children[1].children[0].classList.toggle('active');
       item.children[1].classList.toggle('active');
     });
   });
 }
 
-add_active_class();
+add_active_class_listener();
