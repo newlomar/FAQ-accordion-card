@@ -1,0 +1,1 @@
+1 - Verificar forma de não empurrar todos elementos quando a resposta estiver ativa.
