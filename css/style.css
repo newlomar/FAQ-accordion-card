@@ -173,7 +173,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .card .main__section h1 {
@@ -182,5 +182,6 @@ footer {
 
   .card .main__section .questions .question-div {
     margin-right: 0;
+    width: 85%;
   }
 }
