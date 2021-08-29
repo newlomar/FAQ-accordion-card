@@ -68,6 +68,22 @@ footer {
   left: 4rem;
 }
 
+.card .box-image {
+  position: absolute;
+  z-index: 2;
+  top: 235px;
+  left: -90px;
+}
+
+.card .desktop-img {
+  overflow: hidden;
+}
+
+.card .main-image-desktop {
+  position: relative;
+  left: -75px;
+}
+
 .card .box-image, .card .main-image-desktop {
   display: none;
 }
@@ -129,9 +145,13 @@ footer {
 
 @media (min-width: 700px) {
   .card {
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 0;
+    padding: 8rem;
+    padding-left: 0;
   }
   .card .main-image {
     display: none;
@@ -149,8 +169,18 @@ footer {
     display: block;
   }
 
-}
+  .card .main__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+  }
 
-@media (min-width: 1200px) {
+  .card .main__section h1 {
+    margin-top: 0;
+  }
 
+  .card .main__section .questions .question-div {
+    margin-right: 0;
+  }
 }
