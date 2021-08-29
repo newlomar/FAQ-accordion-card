@@ -34,18 +34,20 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--soft-violet);
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 footer {
   margin-top: 2rem;
 }
 
-.card {
+main .card {
   position: relative;
   min-width: 330px;
   max-width: 330px;
@@ -53,59 +55,27 @@ footer {
   border-radius: 1.5rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding: 1.5rem;
-  margin: 0 auto;
-  margin-top: 9.5rem;
+  margin: 1rem auto;
 }
 
-.card .main-image {
-  position: absolute;
-  top: -9rem;
-}
 
-.card .main-image-shadow {
-  position: absolute;
-  top: 0;
-  left: 4rem;
-}
-
-.card .box-image {
-  position: absolute;
-  z-index: 2;
-  top: 235px;
-  left: -90px;
-}
-
-.card .desktop-img {
-  overflow: hidden;
-}
-
-.card .main-image-desktop {
-  position: relative;
-  left: -75px;
-}
-
-.card .box-image, .card .main-image-desktop {
-  display: none;
-}
-
-.card .main__section h1 {
+main .card .main__section h1 {
   font-size: 2.7rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 9rem;
   color: var(--very-dark-desaturated-blue);
 }
 
-.card .main__section .questions {
+main .card .main__section .questions {
   margin: 2rem 0;
 }
 
-.card .main__section .questions .question-div {
+main .card .main__section .questions .question-div {
   border-bottom: 1px solid var(--light-grayish-blue);
   cursor: pointer;
 }
 
-.card .main__section .questions .question-div .question {
+main .card .main__section .questions .question-div .question {
   font-size: 1.15rem;
   color: var(--very-dark-desaturated-blue);
   margin: 1.5rem 1.5rem 1.5rem 0;
@@ -116,19 +86,19 @@ footer {
   transition: font-weight 300ms;
 }
 
-.card .main__section .questions .question-div .question span.active {
+main .card .main__section .questions .question-div .question span.active {
   font-weight: 700;
 }
 
-.card .main__section .questions .question-div .question a img {
+main .card .main__section .questions .question-div .question a img {
   height: 0.6rem;
 }
 
-.card .main__section .questions .question-div .question a img.active {
+main .card .main__section .questions .question-div .question a img.active {
   transform: rotate(180deg);
 }
 
-.card .main__section .questions .question-div .answer {
+main .card .main__section .questions .question-div .answer {
   max-height: 0;
   overflow: hidden;
   font-size: 1rem;
@@ -136,7 +106,7 @@ footer {
   transition: max-height 300ms;
 }
 
-.card .main__section .questions .question-div .answer.active {
+main .card .main__section .questions .question-div .answer.active {
   max-height: 20rem;
 }
 
@@ -144,7 +114,7 @@ footer {
 /* Media Queries */
 
 @media (min-width: 700px) {
-  .card {
+  main .card {
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -153,34 +123,34 @@ footer {
     padding: 8rem;
     padding-left: 0;
   }
-  .card .main-image {
+  main .card .main-image {
     display: none;
   }
 
-  .card .main-image-shadow {
+  main .card .main-image-shadow {
     display: none;
   }
 
-  .card .box-image {
+  main .card .box-image {
     display: block;
   }
 
-  .card .main-image-desktop {
+  main .card .main-image-desktop {
     display: block;
   }
 
-  .card .main__section {
+  main .card .main__section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 45%;
   }
 
-  .card .main__section h1 {
+  main .card .main__section h1 {
     margin-top: 0;
   }
 
-  .card .main__section .questions .question-div {
+  main .card .main__section .questions .question-div {
     margin-right: 0;
     width: 85%;
   }
